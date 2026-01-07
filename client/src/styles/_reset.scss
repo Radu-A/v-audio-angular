@@ -1,0 +1,46 @@
+// src/styles/_reset.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Eliminar márgenes por defecto de todo
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+// Configuración base del cuerpo
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: white; // O tu color de fondo por defecto
+  color: #f90202;
+}
+
+// Mejorar visualización de multimedia
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Eliminar estilos de lista (muy útil para menús en Angular)
+ul,
+ol {
+  list-style: none;
+}
+
+// Botones con puntero por defecto
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}

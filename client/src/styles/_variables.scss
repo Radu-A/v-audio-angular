@@ -1,0 +1,27 @@
+// src/styles/_variables.scss
+
+// Colores
+$primary: #3b82f6;
+$primary-dark: #1d4ed8;
+$secondary: #64748b;
+$success: #10b981;
+$danger: #ef4444;
+
+// Escala de grises
+$gray-100: #f3f4f6;
+$gray-500: #6b7280;
+$gray-900: #111827;
+
+// Espaciados (Sistema de 8px es el estándar)
+$space-xs: 0.25rem; // 4px
+$space-s: 0.5rem; // 8px
+$space-m: 1rem; // 16px
+$space-l: 2rem; // 32px
+
+// Breakpoints para el diseño responsivo
+$breakpoints: (
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+);
