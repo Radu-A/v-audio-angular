@@ -1,0 +1,26 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.logo-container {
+  @include mixins.row-center;
+  gap: 1rem;
+}
+
+.v-logo {
+  @include mixins.row-center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  background-color: white;
+  color: variables.$gray-950;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.audio-logo {
+  font-size: 1.5rem;
+}
+
+.my-icon {
+  color: white;
+}

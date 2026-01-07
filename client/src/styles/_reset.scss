@@ -1,4 +1,6 @@
 // src/styles/_reset.scss
+@use './variables';
+@use './mixins';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *,
@@ -19,8 +21,8 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: white; // O tu color de fondo por defecto
-  color: #3c3c3c;
+  background-color: variables.$gray-950; // Ahora funcionará correctamente
+  color: variables.$gray-500;
   font-family: Inter, Arial, Arial, Helvetica, sans-serif;
 }
 
@@ -45,4 +47,9 @@ button {
   cursor: pointer;
   background: none;
   border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
