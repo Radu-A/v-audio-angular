@@ -1,4 +1,5 @@
 // src/styles/_reset.scss
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *,
 *::before,
@@ -19,7 +20,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: white; // O tu color de fondo por defecto
-  color: #f90202;
+  color: #3c3c3c;
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
 }
 
 // Mejorar visualización de multimedia
