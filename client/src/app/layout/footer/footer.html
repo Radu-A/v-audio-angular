@@ -1,1 +1,68 @@
-<p>footer works!</p>
+<footer>
+  <div class="footer-container">
+    <div class="brand-column">
+      <div class="logo-container">
+        <span class="v-logo">V</span>
+        <span class="audio-logo">AUDIO</span>
+      </div>
+      <p>Ingeniería acústica de vanguardia. Creamos herramientas para los puristas del sonido.</p>
+
+      <div class="social-icons">
+        <!-- @for (socialLink of socialLinks; track $index) {
+        <a class="social-link" [href]="socialLink.url" target="_blank">
+          <lucide-icon [img]="socialLink.icon" class="my-icon" [size]="20"></lucide-icon>
+        </a>
+        } -->
+        <a> Icono red social </a>
+        <lucide-icon [img]="Globe" class="my-icon"></lucide-icon>
+      </div>
+    </div>
+
+    <div class="links-column">
+      <div class="link-group">
+        <button class="accordion-toggle">
+          <h4>Título sección</h4>
+        </button>
+        <div class="link-list-wrapper">
+          <ul>
+            <li>
+              <a> Link label </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust-container">
+    <div class="features">
+      <div class="feature-item">
+        <span>Pagos Seguros SSL</span>
+      </div>
+      <div class="separator"></div>
+      <div class="feature-item">
+        <span>Envíos Internacionales</span>
+      </div>
+    </div>
+
+    <div class="payment-methods">
+      <span>VISA</span>
+      <span> Pay<span>Pal</span> </span>
+    </div>
+  </div>
+
+  <div class="legal-container">
+    <div class="copyright-wrapper">
+      <span>© 2026 AURA Audio Inc.</span>
+      <div class="legal-links">
+        <a routerLink="/privacy"> Privacidad </a>
+        <a routerLink="/cookies"> Cookies </a>
+        <a routerLink="/terms"> Términos </a>
+      </div>
+    </div>
+
+    <button class="region-selector">
+      <span>España — EUR</span>
+    </button>
+  </div>
+</footer>
