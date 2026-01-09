@@ -3,9 +3,18 @@
 // Colores
 $primary: #f97316;
 
+// Semántica de marca
+$primary-light: lighten($primary, 15%);
+$primary-dark: darken($primary, 10%);
+
 // Escala de grises
 $gray-100: #f3f4f6;
+$gray-300: #d1d5db;
+$gray-400: #9ca3af;
 $gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
 $gray-900: #111827;
 $gray-950: #030712;
 
@@ -14,6 +23,33 @@ $space-xs: 0.25rem; // 4px
 $space-s: 0.5rem; // 8px
 $space-m: 1rem; // 16px
 $space-l: 2rem; // 32px
+$space-xl: 4rem; // 64px
+$space-2xl: 8rem; // 128px - Para separar bloques de producto
+$space-3xl: 12rem; // 192px
+
+// Tamaño de containers
+$container-xs: 20rem;
+$container-sm: 24rem;
+$container-md: 28rem;
+$container-lg: 32rem;
+$container-2xl: 42rem;
+$container-3xl: 48rem;
+$container-max: 80rem;
+
+// Escala tipográfica (Proporción áurea o Major Second)
+$text-xs: 0.75rem; // 12px
+$text-sm: 0.875rem; // 14px
+$text-base: 1rem; // 16px
+$text-lg: 1.25rem; // 20px
+$text-xl: 1.5rem; // 24px
+$text-2xl: 2rem; // 32px
+$text-3xl: 3.5rem; // 56px - Para Hero Sections de productos
+
+// Sombras sutiles (Shadows)
+// Evita sombras negras; usa sombras basadas en el color de fondo
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+$shadow-premium: 0 20px 50px rgba(0, 0, 0, 0.3); // Para resaltar el producto estrella
 
 // Breakpoints para el diseño responsivo
 $breakpoints: (
