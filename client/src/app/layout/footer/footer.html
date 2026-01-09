@@ -8,46 +8,52 @@
       <p>Ingeniería acústica de vanguardia. Creamos herramientas para los puristas del sonido.</p>
 
       <div class="social-icons">
-        <!-- @for (socialLink of socialLinks; track $index) {
-        <a class="social-link" [href]="socialLink.url" target="_blank">
-          <lucide-icon [img]="socialLink.icon" class="my-icon" [size]="20"></lucide-icon>
+        @for (icon of socialIcons; track $index) {
+        <a [href]="icon.url" target="_blank">
+          <lucide-icon [img]="icon.FileIcon" class="my-icon" [size]="20"></lucide-icon>
         </a>
-        } -->
-        <a> Icono red social </a>
-        <lucide-icon [img]="Globe" class="my-icon"></lucide-icon>
+        }
       </div>
     </div>
 
     <div class="links-column">
+      @for (section of footerLinks; track $index) {
       <div class="link-group">
         <button class="accordion-toggle">
-          <h4>Título sección</h4>
+          <h4>{{ section.title }}</h4>
         </button>
         <div class="link-list-wrapper">
           <ul>
+            @for (link of section.links; track $index) {
+
             <li>
-              <a> Link label </a>
+              <a>{{ link }} </a>
             </li>
+            }
           </ul>
         </div>
       </div>
+      }
     </div>
   </div>
 
   <div class="trust-container">
     <div class="features">
       <div class="feature-item">
+        <lucide-icon [img]="ShieldCheck" [size]="18"></lucide-icon>
         <span>Pagos Seguros SSL</span>
       </div>
       <div class="separator"></div>
       <div class="feature-item">
+        <lucide-icon [img]="Globe" [size]="18"></lucide-icon>
         <span>Envíos Internacionales</span>
       </div>
     </div>
 
     <div class="payment-methods">
-      <span>VISA</span>
-      <span> Pay<span>Pal</span> </span>
+      <lucide-icon [img]="CreditCard" [size]="25" class="credit-card"></lucide-icon>
+      <span class="visa">VISA</span>
+      <span class="pay"> Pay<span class="pal">Pal</span> </span>
     </div>
   </div>
 
