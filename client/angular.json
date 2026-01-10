@@ -63,8 +63,7 @@
               "buildTarget": "v-audio:build:production"
             },
             "development": {
-              "buildTarget": "v-audio:build:development",
-              "proxyConfig": "proxy.conf.json"
+              "buildTarget": "v-audio:build:development"
             }
           },
           "defaultConfiguration": "development"
