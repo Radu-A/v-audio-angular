@@ -1,1 +1,4 @@
-<p>product-list works!</p>
+<p>Product List Works!</p>
+@for (product of (productList$ | async); track $index) {
+<p>{{ product.name }}</p>
+}
