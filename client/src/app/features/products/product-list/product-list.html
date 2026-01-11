@@ -1,4 +1,16 @@
-<p>Product List Works!</p>
-@for (product of (productList$ | async); track $index) {
-<p>{{ product.name }}</p>
-}
+<section class="product-list-header">
+  <article class="header-article">
+    <span>TIENDA ONLINE</span>
+    <h1>Todos los Productos</h1>
+    <p>
+      Explora nuestra gama completa de dispositivos de audio de alta fidelidad. Diseñados en la
+      oscuridad, para brillar con el sonido.
+    </p>
+  </article>
+  <article class="filter-article">Aquí ira el super filtro</article>
+</section>
+<section class="product-list-container">
+  @for (product of (productList$ | async); track $index) {
+  <app-product-card [product]="product"></app-product-card>
+  }
+</section>
