@@ -1,0 +1,42 @@
+@use '../../../../styles/variables';
+
+.product-list-header {
+  padding: 3rem 2rem;
+  display: grid;
+  border-bottom: 1px solid variables.$gray-800;
+
+  .header-article {
+    max-width: 480px;
+  }
+  span {
+    color: variables.$primary;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.product-list-container {
+  padding: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: map-get(variables.$breakpoints, 'md')) {
+  .product-list-header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: map-get(variables.$breakpoints, 'lg')) {
+  .product-list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

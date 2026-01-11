@@ -1,0 +1,57 @@
+@use '../../../../../styles/variables' as v;
+
+.product-card {
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 450px;
+  transition: all 0.8s ease-in-out;
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    .product-name {
+      color: v.$primary;
+    }
+    .details-link {
+      color: white;
+    }
+  }
+}
+
+.image-container {
+  overflow: hidden;
+  aspect-ratio: 1/1;
+
+  img {
+    transition: transform 200ms ease-in-out;
+  }
+}
+
+.description-container {
+  padding: 1.5rem;
+  span {
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: color 200ms ease-in-out;
+  }
+  h2 {
+    font-weight: 700;
+    color: white;
+    transition: color 200ms ease-in-out;
+  }
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid v.$gray-800;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}

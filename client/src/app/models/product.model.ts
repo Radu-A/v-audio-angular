@@ -1,13 +1,23 @@
 export interface ProductModel {
   id: number;
-  category_id: number;
   name: string;
+  color: string;
   slug: string;
+  category: string;
   price: number;
-  short_description: string;
+  short: string;
   description: string;
   feature_1: number;
   feature_2: number;
   feature_3: number;
-  specs: object;
+  specs: Record<string, string>;
+  photos: string[];
+}
+
+export interface ResponseModel {
+  data: {
+    products: ProductModel[];
+  };
+  results: number;
+  status: string;
 }
